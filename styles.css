@@ -78,7 +78,7 @@ header {
     color: #ff4081;  /* A pinkish color for the crossed-out text */
     font-weight: bold;  /* Optional: make the text bold */
     font-size: 1rem;
-    opacity: 90%;
+    opacity: 80%;
 }
 
 
@@ -146,25 +146,25 @@ section.fade-in {
     top: 20px;  /* Adjust top distance from the top of the page */
     right: 20px;  /* Adjust right distance from the right side */
     display: flex;
-    gap: 1.5rem;  /* Space between the icons */
-    padding: 0.5rem;
+    gap: 2rem;  /* Space between the icons */
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
     border-radius: 10px;  /* Rounded corners for the box */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Soft shadow for depth */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);  /* Soft shadow for depth */
     z-index: 10;  /* Make sure it stays on top of other elements */
 }
 
 /* Style for each social icon */
 .social-icon {
     color: #fff;  /* White icons */
-    font-size: 1.6rem;  /* Icon size */
+    font-size: 1.9rem;  /* Icon size */
     text-decoration: none;  /* Remove underline */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
     color: #00bcd4;  /* Hover color */
-    transform: scale(1.1);  /* Slight zoom effect */
+    transform: scale(1.2);  /* Slight zoom effect */
 }
 
 /* LinkedIn Icon */
