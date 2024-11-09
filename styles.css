@@ -66,7 +66,7 @@ header {
 
 /* Subtitle Styling */
 .subtitle {
-    font-size: 1rem;  /* Smaller font size */
+    font-size: 1.3rem;  /* Smaller font size */
     color: #aaa;  /* Subtle gray color */
     margin-top: 1rem;
     font-style: italic;  /* Optional, to give it a more quirky vibe */
@@ -77,6 +77,8 @@ header {
     text-decoration: line-through;
     color: #ff4081;  /* A pinkish color for the crossed-out text */
     font-weight: bold;  /* Optional: make the text bold */
+    font-size: 1rem;
+    opacity: 90%;
 }
 
 
@@ -214,4 +216,119 @@ section.fade-in {
         font-size: 1.4rem;  /* Smaller icons on mobile */
     }
 }
+
+/* Projects Section */
+#projects {
+    background-color: #121212;  /* Dark background for the section */
+    color: #fff;  /* Light text color */
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+/* Title Styling for Projects Section */
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Container for Project Cards */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+}
+
+/* Individual Project Cards */
+.project-card {
+    background-color: #1f1f1f;  /* Darker card background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effects */
+.project-card:hover {
+    transform: translateY(-5px);  /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);  /* Stronger shadow */
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+/* Link Styling for Project Cards */
+.project-link {
+    color: #00bcd4;  /* Cyan color for links */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ff4081;  /* Change color on hover */
+}
+
+/* Color Themes for Specific Project Areas */
+
+/* Synthetic Biology & Bioinformatics */
+.bio-info {
+    border: 2px solid #00ff7f;  /* Neon green border */
+    background: rgba(0, 255, 127, 0.1);  /* Neon green glow background */
+    color: #00ff7f;  /* Neon green text */
+}
+
+.bio-info:hover {
+    background: rgba(0, 255, 127, 0.2);  /* Darker green glow effect on hover */
+}
+
+/* Computational Chemistry */
+.chemistry {
+    border: 2px solid #39ff14;  /* Neon green border */
+    background: rgba(57, 255, 20, 0.1);  /* Lighter neon green */
+    color: #39ff14;  /* Neon green text */
+}
+
+.chemistry:hover {
+    background: rgba(57, 255, 20, 0.2);  /* Darker green effect on hover */
+}
+
+/* Quantum Computing */
+.quantum {
+    border: 2px solid #8a2be2;  /* Neon purple border */
+    background: rgba(138, 43, 226, 0.1);  /* Light purple glow */
+    color: #8a2be2;  /* Neon purple text */
+}
+
+.quantum:hover {
+    background: rgba(138, 43, 226, 0.2);  /* Darker purple glow effect on hover */
+}
+
+/* Animation Effects (optional: to be added for interaction or to display something like reaction mechanisms/quantum circuits) */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 5px #00ff7f, 0 0 10px #00ff7f, 0 0 15px #00ff7f;
+    }
+    50% {
+        text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #00ff7f;
+    }
+    100% {
+        text-shadow: 0 0 5px #00ff7f, 0 0 10px #00ff7f, 0 0 15px #00ff7f;
+    }
+}
+
+/* Apply the neon animation to project headings */
+.project-card h3 {
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
 
