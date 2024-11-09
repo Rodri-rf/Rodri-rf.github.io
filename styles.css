@@ -93,3 +93,14 @@ footer a {
     color: #00bcd4;
     text-decoration: none;
 }
+
+/* Fade-in effect when section is in view */
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section.fade-in {
+    opacity: 1;
+}
+
