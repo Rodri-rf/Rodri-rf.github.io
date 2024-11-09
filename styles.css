@@ -142,7 +142,7 @@ section.fade-in {
 .social-icons {
     display: flex;
     justify-content: flex-start;  /* Align left */
-    gap: 1.5rem;  /* Space between the icons */
+    gap: 2.5rem;  /* Space between the icons */
     margin-bottom: 1rem;  /* Space between icons and name */
     padding: 0.5rem;
 }
