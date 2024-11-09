@@ -138,19 +138,24 @@ section.fade-in {
     color: #ccc;
 }
 
-/* Style the social media icons container */
-.social-icons {
+/* Social Icons Box Container */
+.social-icons-box {
+    position: absolute;
+    top: 20px;  /* Adjust top distance from the top of the page */
+    right: 20px;  /* Adjust right distance from the right side */
     display: flex;
-    justify-content: flex-start;  /* Align left */
-    gap: 2.5rem;  /* Space between the icons */
-    margin-bottom: 1rem;  /* Space between icons and name */
+    gap: 1.5rem;  /* Space between the icons */
     padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
+    border-radius: 10px;  /* Rounded corners for the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Soft shadow for depth */
+    z-index: 10;  /* Make sure it stays on top of other elements */
 }
 
-/* Style for each icon */
+/* Style for each social icon */
 .social-icon {
     color: #fff;  /* White icons */
-    font-size: 1.5rem;  /* Icon size */
+    font-size: 1.6rem;  /* Icon size */
     text-decoration: none;  /* Remove underline */
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -195,5 +200,4 @@ section.fade-in {
 .social-icon.twitter:hover {
     color: #1a91da;  /* Twitter hover color */
 }
-
 
