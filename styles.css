@@ -138,3 +138,62 @@ section.fade-in {
     color: #ccc;
 }
 
+/* Style the social media icons container */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;  /* Align left */
+    gap: 1.5rem;  /* Space between the icons */
+    margin-bottom: 1rem;  /* Space between icons and name */
+    padding: 0.5rem;
+}
+
+/* Style for each icon */
+.social-icon {
+    color: #fff;  /* White icons */
+    font-size: 1.5rem;  /* Icon size */
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00bcd4;  /* Hover color */
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+
+/* LinkedIn Icon */
+.social-icon.linkedin {
+    color: #0077b5;
+}
+
+.social-icon.linkedin:hover {
+    color: #0a66c2;  /* LinkedIn hover color */
+}
+
+/* GitHub Icon */
+.social-icon.github {
+    color: #333;
+}
+
+.social-icon.github:hover {
+    color: #6e5494;  /* GitHub hover color */
+}
+
+/* Email Icon */
+.social-icon.email {
+    color: #ff4081;
+}
+
+.social-icon.email:hover {
+    color: #ff6090;  /* Email hover color */
+}
+
+/* Twitter Icon */
+.social-icon.twitter {
+    color: #1da1f2;
+}
+
+.social-icon.twitter:hover {
+    color: #1a91da;  /* Twitter hover color */
+}
+
+
