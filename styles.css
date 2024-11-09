@@ -201,3 +201,17 @@ section.fade-in {
     color: #1a91da;  /* Twitter hover color */
 }
 
+@media (max-width: 768px) {
+    .social-icons-box {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        flex-direction: row;  /* Arrange icons in a row for smaller screens */
+        gap: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.4rem;  /* Smaller icons on mobile */
+    }
+}
+
