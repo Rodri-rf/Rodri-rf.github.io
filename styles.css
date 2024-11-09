@@ -64,6 +64,23 @@ header {
     color: #fff;
 }
 
+/* Subtitle Styling */
+.subtitle {
+    font-size: 1rem;  /* Smaller font size */
+    color: #aaa;  /* Subtle gray color */
+    margin-top: 1rem;
+    font-style: italic;  /* Optional, to give it a more quirky vibe */
+}
+
+/* Crossed-out text */
+.crossed {
+    text-decoration: line-through;
+    color: #ff4081;  /* A pinkish color for the crossed-out text */
+    font-weight: bold;  /* Optional: make the text bold */
+}
+
+
+
 /* Section Styles */
 section {
     padding: 3rem 6rem;
