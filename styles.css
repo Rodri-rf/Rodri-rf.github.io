@@ -386,4 +386,19 @@ section.fade-in {
     overflow: hidden;
 }
 
+.view-resume-link {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-resume-link:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
 
