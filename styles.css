@@ -331,4 +331,25 @@ section.fade-in {
     animation: neon-glow 1.5s ease-in-out infinite alternate;
 }
 
+/* Style the resume download button */
+.download-button {
+    text-decoration: none;
+}
+
+.download-button button {
+    background-color: #00bcd4;  /* Your brand color */
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button button:hover {
+    background-color: #008c99;  /* Slightly darker on hover */
+}
+
+
 
