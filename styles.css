@@ -153,6 +153,7 @@ section.fade-in {
     border-radius: 10px;  /* Rounded corners for the box */
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);  /* Soft shadow for depth */
     z-index: 10;  /* Make sure it stays on top of other elements */
+    text-align: justify;
 }
 
 /* Style for each social icon */
@@ -236,6 +237,7 @@ section.fade-in {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     gap: 2rem;
+    text-align: justify;
 }
 
 /* Individual Project Cards */
@@ -245,18 +247,21 @@ section.fade-in {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
 }
 
 /* Card Hover Effects */
 .project-card:hover {
     transform: translateY(-5px);  /* Slight lift effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);  /* Stronger shadow */
+    text-align: justify;
 }
 
 /* Project Title */
 .project-card h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 /* Project Description */
@@ -264,6 +269,7 @@ section.fade-in {
     font-size: 1rem;
     color: #ccc;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 /* Link Styling for Project Cards */
@@ -272,6 +278,7 @@ section.fade-in {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
+    text-align: justify;
 }
 
 .project-link:hover {
@@ -285,6 +292,7 @@ section.fade-in {
     border: 2px solid #00ff7f;  /* Neon green border */
     background: rgba(0, 255, 127, 0.1);  /* Neon green glow background */
     color: #00ff7f;  /* Neon green text */
+    text-align: justify;
 }
 
 .bio-info:hover {
@@ -296,6 +304,7 @@ section.fade-in {
     border: 2px solid #39ff14;  /* Neon green border */
     background: rgba(57, 255, 20, 0.1);  /* Lighter neon green */
     color: #39ff14;  /* Neon green text */
+    text-align: justify;
 }
 
 .chemistry:hover {
