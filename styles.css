@@ -421,4 +421,38 @@ section.fade-in {
     color: #fff;
 }
 
+.book-quotes-collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.quote-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.quote-card:hover {
+    transform: scale(1.05);
+}
+
+.quote-card blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+}
+
+.quote-card footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
 
