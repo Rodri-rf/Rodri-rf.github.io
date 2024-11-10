@@ -79,7 +79,7 @@ header {
     color: #ff4081;  /* A pinkish color for the crossed-out text */
     font-weight: bold;  /* Optional: make the text bold */
     font-size: 1rem;
-    opacity: 80%;
+    opacity: 70%;
 }
 
 
@@ -445,7 +445,7 @@ section.fade-in {
 .quote-card blockquote {
     margin: 0;
     font-style: italic;
-    color: #0000;
+    color: #D8FBF6;
 }
 
 .quote-card footer {
