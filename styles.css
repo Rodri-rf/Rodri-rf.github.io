@@ -235,19 +235,31 @@ section.fade-in {
 /* Container for Project Cards */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     text-align: justify;
 }
 
-/* Individual Project Cards */
 .project-card {
-    background-color: #1f1f1f;  /* Darker card background */
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
     text-align: justify;
+    
+}
+
+.full-description {
+    display: none;
+    text-align: justify;
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 /* Card Hover Effects */
