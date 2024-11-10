@@ -223,7 +223,6 @@ section.fade-in {
     background-color: #121212;  /* Dark background for the section */
     color: #fff;  /* Light text color */
     padding: 3rem 1.5rem;
-    text-align: center;
 }
 
 /* Title Styling for Projects Section */
@@ -342,8 +341,8 @@ section.fade-in {
 /* Container for PDF Embed */
 .pdf-container {
     position: relative;
-    width: 100%;
-    height: 100vh;  /* Make the container take full viewport height */
+    width: 90%;  /* Adjust width to reduce side margins */
+    height: 100vh;  /* Full viewport height */
     background-color: transparent;  /* Ensure no background color behind the PDF */
     margin: 0 auto;  /* Center the iframe horizontally */
     overflow: hidden;  /* Ensure content stays within the container */
