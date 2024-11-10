@@ -429,7 +429,7 @@ section.fade-in {
 }
 
 .quote-card {
-    background-color: #f9f9f9;
+    background-color: ##CBF7F2;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
@@ -445,7 +445,7 @@ section.fade-in {
 .quote-card blockquote {
     margin: 0;
     font-style: italic;
-    color: #CBF7F2;
+    color: #0000;
 }
 
 .quote-card footer {
