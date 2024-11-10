@@ -41,3 +41,17 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
 });
+
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const fullDescription = button.nextElementSibling;
+        if (fullDescription.style.display === 'none' || fullDescription.style.display === '') {
+            fullDescription.style.display = 'block';
+            button.textContent = 'Read Less';
+        } else {
+            fullDescription.style.display = 'none';
+            button.textContent = 'Read More';
+        }
+    });
+});
+
