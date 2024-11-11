@@ -455,4 +455,7 @@ section.fade-in {
     margin-top: 10px;
 }
 
+embed {
+  width: 100%;
+}
 
