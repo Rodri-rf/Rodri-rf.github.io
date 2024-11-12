@@ -46,18 +46,18 @@ header {
 
 .split-right nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 2rem;
 }
 
 .split-right nav ul li {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .split-right nav ul li a {
     color: #00bcd4;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: color 0.3s ease-in-out;
 }
 
