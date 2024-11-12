@@ -468,40 +468,4 @@ embed {
   width: 100%;
 }
 
-.carousel {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-}
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-    background: #f0f0f0;
-}
-
-.carousel-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.carousel-button {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
