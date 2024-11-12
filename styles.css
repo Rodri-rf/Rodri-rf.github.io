@@ -14,6 +14,14 @@ body {
     text-align: justify;
 }
 
+.title {
+    margin-bottom: 30px; /* Adjust the value as needed */
+}
+
+.nav-section {
+    margin-top: 30px; /* Adjust the value as needed */
+}
+
 /* Split Layout */
 header {
     display: flex;
@@ -429,7 +437,7 @@ section.fade-in {
 }
 
 .quote-card {
-    background-color: ##CBF7F2;
+    background-color: #CBF7F2;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
