@@ -21,6 +21,7 @@ body {
 .nav-section {
     margin-top: 30px; /* Adjust the value as needed */
     margin-left: 30px
+
 }
 
 /* Split Layout */
@@ -35,11 +36,13 @@ header {
 .split-left {
     width: 50%;
     color: #fff;
+    margin: 3rem;
 }
 
 .split-left h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 
 .split-left p {
@@ -85,7 +88,7 @@ header {
 /* Crossed-out text */
 .crossed {
     text-decoration: line-through;
-    color: #ff4081;  /* A pinkish color for the crossed-out text */
+    color:#ff4081;  /* A pinkish color for the crossed-out text */
     font-weight: bold;  /* Optional: make the text bold */
     font-size: 1rem;
     opacity: 70%;
@@ -430,21 +433,27 @@ section.fade-in {
     color: #fff;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Example exotic font */
+
 .book-quotes-collage {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    font-family: 'Pacifico', cursive; /* Exotic font */
+    max-height: 900px;
+
 }
 
 .quote-card {
-    background-color: ##CBF7F2;
+    background-color: #1f1f1f; /* Same as background color */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transsform 0.2s;
+    max-height: 800px;
 }
 
 .quote-card:hover {
@@ -454,7 +463,11 @@ section.fade-in {
 .quote-card blockquote {
     margin: 0;
     font-style: italic;
-    color: #D8FBF6;
+    color: #a0f7f7; /* Light cyan text color */
+    word-wrap: break-word;
+    max-height: 500px;
+    overflow-y: auto;
+    text-align: justify; /* Justify text */
 }
 
 .quote-card footer {
@@ -464,8 +477,25 @@ section.fade-in {
     margin-top: 10px;
 }
 
+.quote-card pre {
+    white-space: pre-wrap; /* Maintain poem format */
+    font-family: 'Pacifico', cursive; /* Exotic font for poems */
+    color: #a5f5f5; /* Light cyan text color */
+}
+
+@media (max-width: 768px) {
+    .quote-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-card {
+        width: 100%;
+    }
+}
+
 embed {
   width: 100%;
 }
-
 
