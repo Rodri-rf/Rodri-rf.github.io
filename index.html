@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo A. Reyes Feregrino | Personal Website</title>
+    <title>Rodrigo A. Reyes Feregrino | Researcher & Builder</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,164 +16,328 @@
 </head>
 
 <body>
-    <header>
-        <div class="split-left">
-            <h1>Hi, I'm Rodrigo.</h1>
-             <p> Multi-purpose smart person (on a good day): Computer Scientist, Chemist, Philosopher, and Researcher.</p>
-            
-        <p class="subtitle">Also, <span class="crossed">Caffeine lover, proficient yapper, menace in a lab coat, constructive empiricist, and salsa dancer</span></p>
+    <!-- Social Icons - Fixed Position -->
+    <div class="social-icons-fixed">
+        <a href="https://ca.linkedin.com/in/rodrigo-reyes-feregrino" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Rodri-rf" target="_blank" class="social-icon github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:rodrigo.reyesferegrino@mail.utoronto.ca" class="social-icon email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
     </div>
-        <div class="split-right">
-         <!-- Social Icons Box -->
-        <div class="social-icons-box">
-            <a href="https://ca.linkedin.com/in/rodrigo-reyes-feregrino" target="_blank" class="social-icon linkedin">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Rodri-rf" target="_blank" class="social-icon github">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:your-email@example.com" target="_blank" class="social-icon email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://twitter.com/yourusername" target="_blank" class="social-icon twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects ">Projects & Research</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#hobbies">Random</a></li>
-                </ul>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Rodrigo</span>.
+                </h1>
+                <p class="hero-subtitle">
+                    Computer Scientist. Chemist. Researcher. Builder of things at the intersection of quantum mechanics, generative AI, and synthetic biology.
+                </p>
+                <p class="hero-footnote">
+                    Also: caffeine enthusiast, proficient yapper, constructive empiricist, occasional salsa dancer, and believer that the best ideas happen when disciplines collide.
+                </p>
+            </div>
+            <nav class="hero-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#random" class="nav-link">Random</a>
             </nav>
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm currently a Computer Science and Chemistry student at the University of Toronto, doing  a 12-month internship as a bioinformatician at the R&D department of Sanofi.  </p>
-        <p>I am also currently a TA, and teach about elegant solutions and cool concepts in theoretical computer science. Few things are as satisfying as watching students crack a tough problem—or convincing them dynamic programming is magic (and sometimes nightmare fuel).</p>
-        <p>In general, I thrive in the overlap of disciplines, the buzz of caffeine, and the chaos of big ideas.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm a Computer Science and Chemistry student at the University of Toronto, currently navigating the messy, fascinating intersection of quantum computing, machine learning, and synthetic biology. I just finished a summer internship as a bioinformatics software developer at <strong>Roche's R&D division</strong>, where I built computational infrastructure for their novel SBX nanopore sequencing platform. Before that, I completed my PEY co-op at <strong>Sanofi</strong>, developing high-throughput genomics pipelines and designing heuristics to distinguish real viral mutations from sequencing noise.
+                </p>
+                <p>
+                    Right now, I'm doing research with two groups. With <strong>Professor Nathan Wiebe</strong>, I work on theoretical quantum computing—specifically randomized quantum algorithms, combining qDRIFT time evolution with quantum phase estimation and zero-noise extrapolation to push what near-term quantum computers can do. With <strong>Professor Artur Izmaylov</strong>, I co-developed a sampling-based quantum diagonalization method using Q-SENSE ansätze, creating the first practical pipeline that leverages seniority-structured states for NISQ-era electronic structure calculations.
+                </p>
+                <p>
+                    I'm also a Teaching Assistant for theoretical computer science and calculus courses. Few things are as satisfying as watching students crack dynamic programming or finally understand why P vs NP actually matters.
+                </p>
+                <p>
+                    But honestly? What gets me most excited is <strong>synthetic biology and AI</strong>. For the past four years, I've led the computational division of <strong>iGEM Toronto</strong>—the university's synthetic biology research team. We've won 4 Gold Medals and 2 Best Model Awards across four international competitions, building everything from phage engineering platforms to generative models for plasmid DNA. There's something uniquely satisfying about watching sequences you designed <em>in silico</em> actually work in a test tube.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-    <h2>Projects & Research</h2>
-
-    <div class="projects-container">
-        <!-- Synthetic Biology & Bioinformatics -->
-        <div class="project-card">
-            <h3>Synthetic Biology & Bioinformatics</h3>
-            <p>I like to think there is something fundamentally computational about biology; life is information...and Computer Science offers super rich frameworks to deal with information  </p>
-            <p>Most of my projects on synthetic biology and bioinformatics - at least the ones not protected by confidentiality agreements - have either been crafted in conjunction with, or heavily inspired by, the iGEM Toronto synthetic biology research team.</p>
-                <li><a href="https://github.com/Rodri-rf/Metabolic_engineering_weird_tests" target="_blank" class="project-link">Metabolic engineering</a></li>
-                <li><a href="https://github.com/igem-toronto/cobra-fseof" target="_blank" class="project-link">Metabolic engineering II</a></li>
-                <li><a href="https://github.com/igem-toronto/plasmidai" target="_blank" class="project-link">Machine learning-inspired plasmid design</a></li>
-        </div>
-
-        <!-- Computational Chemistry -->
-        <div class="project-card">
-            <h3>Computational Chemistry</h3>
+    <!-- Research & Projects Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research & Projects</h2>
             
-            <p>I have dipped my toes in many areas of computational chemistry. From exploring <i>ab initio</i> methods like DFT and Hartee-Fock, to more empirical methods such as molecular docking simulations, and even applying unsupervised Machine Learning to gain insight on molecular strcutures for Drug Discovery.</p>
+            <!-- Quantum Computing -->
+            <div class="research-area">
+                <div class="research-header">
+                    <h3 class="research-title">Quantum Computing & Chemistry</h3>
+                    <span class="research-period">May 2024 - Present</span>
+                </div>
+                <p class="research-description">
+                    As an avid "spooky action at a distance" enjoyer, I'm fortunate to be doing research with two quantum chemistry groups at UofT. With <strong>Professor Nathan Wiebe</strong>, I investigate quantum simulation algorithms for electronic structure Hamiltonians—specifically product formulas (Trotter-Suzuki, qDRIFT) and block-encoding methods (LCU, Qubitization). I developed a comprehensive framework combining qDRIFT time evolution with quantum phase estimation, implementing both QFT-based and Kitaev's iterative algorithms, plus a zero-noise extrapolation protocol using Chebyshev node sampling that eliminates systematic O(t²) errors.
+                </p>
+                <p class="research-description">
+                    With <strong>Professor Artur Izmaylov</strong>, I co-developed the first practical Sampling-based Quantum Diagonalization (SQD) pipeline using Q-SENSE ansätze. The key insight: seniority-structured states give you systematic control over which regions of Hilbert space actually matter for chemistry, dramatically reducing the classical post-processing workload. We designed numerical experiments connecting seniority control to sampling efficiency—it's beautiful when theory and numerics align. Manuscript in preparation.
+                </p>
+                <div class="research-links">
+                    <a href="https://github.com/Rick0317/qDriftExtraPolation" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> qDRIFT-QPE Framework
+                    </a>
+                </div>
+            </div>
 
-            <p>I've had opportunities to work on this awesome topic as part of University courses, in Hackathons, and most notably as a volunteer researcher at the drug discovery startup Gene2Lead!</p>
-            <li><a href="https://github.com/Rodri-rf/phix-molecular-docking" target="_blank" class="project-link">A bit on Molecular Docking</a></li>
-            <li><a href="https://github.com/Rodri-rf/Drug_Discovery_HFrEF" target="_blank" class="project-link">Clustering Algorithms on different representations of molecular structures</a></li>
+            <!-- Synthetic Biology & AI -->
+            <div class="research-area">
+                <div class="research-header">
+                    <h3 class="research-title">Synthetic Biology & AI-Driven Protein Design</h3>
+                    <span class="research-period">iGEM Toronto, March 2022 - Present</span>
+                </div>
+                <p class="research-description">
+                    I lead the computational division for UofT's synthetic biology research team, competing in the International Genetically Engineered Machine (iGEM) competition. <strong>Four competitions. Four Gold Medals. Two Best Model Awards.</strong> Plus awards for Best Therapeutics, Best Entrepreneurship, and nominations for Best Foundational Advance, Best Wiki, and Best Presentation.
+                </p>
+                <p class="research-description">
+                    I like to think there is something fundamentally computational about biology; life is information...and Computer Science offers super rich frameworks to deal with information. Most of my projects on synthetic biology and bioinformatics—at least the ones not protected by confidentiality agreements—have either been crafted in conjunction with, or heavily inspired by, the iGEM Toronto synthetic biology research team.
+                </p>
+                
+                <div class="project-highlight">
+                    <h4 class="project-highlight-title">2025 – PHORAGER: AI-Powered Phage Engineering</h4>
+                    <p>
+                        Built the first open-source platform for engineering bacteriophage receptor-binding proteins using generative AI. The challenge: phages are incredibly specific about which bacteria they infect, determined by tail fiber proteins that recognize bacterial surface receptors. Traditional phage therapy requires months of screening to find the right phage for a patient's infection. We wanted to <em>design</em> phages instead.
+                    </p>
+                    <p>
+                        I integrated <strong>ESM3</strong> (Meta's 98B-parameter protein language model) for sequence generation, <strong>Boltz-2</strong> for structure prediction and binding affinity estimation, and <strong>MCMC optimization with simulated annealing</strong> to navigate the protein fitness landscape. Our energy function balanced predicted binding to target receptors, reduced binding to wild-type receptors, structural confidence (pTM scores), and sequence novelty. BLASTp confirmed all generated sequences had &lt;40% identity to known proteins—we were genuinely exploring novel sequence space, not just interpolating.
+                    </p>
+                    <p>
+                        We experimentally engineered four <em>E. coli</em> phages with retargeted host specificity: two to recognize truncated R1 lipopolysaccharide instead of K12 glycans, two to bind OmpC instead of LamB protein receptors. The platform reduces phage screening time from months to days. Wet lab validation ongoing; manuscript in preparation.
+                    </p>
+                </div>
+
+                <div class="project-highlight">
+                    <h4 class="project-highlight-title">2024 – Plasmid.AI: Generative Foundation Models for Circular DNA</h4>
+                    <p>
+                        Developed a generative model for designing <em>de novo</em> plasmid sequences—the circular DNA vectors that are fundamental to synthetic biology but notoriously hard to design from scratch. We trained a <strong>Mamba2</strong> state-space model (linear-time complexity beats transformers for long sequences) on 137,000+ plasmid sequences, with custom byte-pair-encoding tokenization and genomics-specific augmentations: reverse-complement and random circular crop strategies to respect the topological constraints of circular DNA.
+                    </p>
+                    <p>
+                        In vitro experiments demonstrated that generated plasmids successfully replicated in bacterial systems, confirming our synthesized origins of replication actually <em>worked</em>. Plasmid.AI is now the <strong>largest open-source toolkit for plasmid foundation models</strong>, and we're continuing to improve it.
+                    </p>
+                </div>
+
+                <div class="project-highlight">
+                    <h4 class="project-highlight-title">2023 – Metabolic Engineering with Genome-Scale Models</h4>
+                    <p>
+                        Applied constraint-based metabolic modeling and linear optimization (Flux Balance Analysis, FSEOF algorithm) to predict genetic modifications that enhance bacterial metabolic network efficiency. Think of it as computational strain design: given a genome-scale model of <em>E. coli</em> metabolism, which genes should you knock out or overexpress to maximize production of your target molecule? We evaluated over 12,000 genetic variations. Won Gold Medal + Best Model Award.
+                    </p>
+                </div>
+
+                <div class="research-links">
+                    <a href="https://github.com/igem-toronto/phage-rbd-generator" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> PHORAGER
+                    </a>
+                    <a href="https://github.com/igem-toronto/plasmidai" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Plasmid.AI
+                    </a>
+                    <a href="https://github.com/igem-toronto/cobra-fseof" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> COBRA-FSEOF
+                    </a>
+                    <a href="https://github.com/Rodri-rf/Metabolic_engineering_weird_tests" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Metabolic Engineering
+                    </a>
+                </div>
+            </div>
+
+            <!-- Computational Chemistry -->
+            <div class="research-area">
+                <div class="research-header">
+                    <h3 class="research-title">Computational Chemistry & Drug Discovery</h3>
+                    <span class="research-period">Various Projects, 2022-2024</span>
+                </div>
+                <p class="research-description">
+                    I've explored various corners of computational chemistry: <em>ab initio</em> methods like DFT and Hartree-Fock, molecular docking simulations, and unsupervised machine learning for drug discovery. Worked as a volunteer researcher at the startup Gene2Lead, applying clustering algorithms to different molecular representations for structure-activity relationship analysis. Also spent a memorable week debugging why HADDOCK3 kept silently dropping carbohydrate residues during protein-glycan docking (I wrote a 20-page troubleshooting document about it—the kind of painful experience that teaches you what computational biology actually involves).
+                </p>
+                <div class="research-links">
+                    <a href="https://github.com/Rodri-rf/phix-molecular-docking" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Molecular Docking
+                    </a>
+                    <a href="https://github.com/Rodri-rf/Drug_Discovery_HFrEF" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Clustering for Drug Discovery
+                    </a>
+                </div>
+            </div>
+
+            <!-- Industry Research -->
+            <div class="research-area">
+                <div class="research-header">
+                    <h3 class="research-title">Industry R&D</h3>
+                    <span class="research-period">Sanofi (PEY Co-op) & Roche (Summer), 2024-2025</span>
+                </div>
+                <p class="research-description">
+                    <strong>Sanofi (May 2024-April 2025, PEY Co-op):</strong> Improved high-throughput genomics pipelines processing 4.5+ billion DNA reads per batch. Implemented alignment algorithms and Bayesian inference for viral minority variant detection. Developed novel heuristics using strand-bias correction and read-position mismatch analysis to distinguish biological mutations from RT-PCR and sequencing artifacts—reduced false positives by 15%. Created graph-based algorithms for detecting cross-sample contamination from barcode misassignment. Deployed optimized multi-threaded workflows on hybrid cloud clusters.
+                </p>
+                <p class="research-description">
+                    <strong>Roche (May-Sept 2025, Summer Internship):</strong> Developed computational infrastructure for evaluating Roche's novel SBX nanopore sequencing platform. Built bioinformatics pipelines for processing time-series performance data, enabling systematic benchmarking of read quality, throughput, and accuracy across experimental conditions. This work enabled the team to understand how algorithm improvements translated into real platform performance.
+                </p>
+            </div>
         </div>
-
-        <!-- Quantum Computing -->
-        <div class="project-card">
-            <h3>Quantum Computing</h3>
-            <p>As an avid "spooky action at a distance" enjoyer, I am fortunate enough to be doing research with Professor Nathan Wiebe on quantum simulation algorithms.  We focus on simulation of electronic structure Hamiltonians </p>
-            <a href="https://github.com/Rick0317/qDriftExtraPolation" target="_blank" class="project-link">Explore</a>
-        </div>
-
-        <!-- Data Structures & Algorithms for Fun and Glory -->
-        <div class="project-card">
-            <h3>Data Structures & Algorithms for Fun and Glory </h3>
-            <p>Have you ever come across a situation in "real-life" which strongly resembles an instance of the problems that some of the more weird/obscure/intimidating Theoretical Computer Science topics aim to solve? Have you ever then thought: "COOL! this is the perfect opportunity for me to spend the next week reinventing the wheel, diving into my previous notes and textbooks, and crafting with my own implementation of this solution, rather than looking at existing (potentially more optimized) solutions" . Well...it has certainly happened to me more than once.</p>
-            <a href="https://github.com/Rodri-rf/DSA-for-fun-and-glory" target="_blank" class="project-link">Explore</a>
-        </div>
-    </div>
-</section>
-
-    <section id="resume">
-    <h2>Resume</h2>
-    
-    <!-- Button to download the resume -->
-    <p>You can download it directly by clicking the button below:</p>
-    <a href="Reyes_Feregrino_Rodrigo_Adolfo_CS_Master_Resume.pdf" download="Rodrigo_A_Reyes_Feregrino_Resume.pdf" class="download-button">
-        <button>Download Resume</button>
-    </a>
-
-    <!-- Link to view the resume on a separate page -->
-    <p>Or, you can view it on a separate page:</p>
-    <a href="resume.html" class="view-resume-link">View Resume</a>
-</section>
-
-    <section id="hobbies">
-    <h2>Random</h2>
-    <h3>Awesome Book quotes</h3>
-    <h3> </h3>
-    <div class="book-quotes-collage">
-
-        <div class="quote-card">
-            <blockquote>
-                "The merit of all things lies in their difficulty”
-            </blockquote>
-            <footer>— Alexander Dumas, "The Three Musketeers"</footer>
-        </div>
-        
-        <div class="quote-card">
-            <blockquote>
-                "Communication is one of those delightful things that only work in practice; in theory it's impossible."
-            </blockquote>
-            <footer>— Brian Christian and Tom Griffiths, "Algorithms to Live By"</footer>
-        </div> 
-
-        <div class="quote-card">
-            <blockquote>
-                "Sometimes mess is more than just an easy choice. It's the optimal choice."
-            </blockquote>
-            <footer>— Brian Christian and Tom Griffiths, Algorithms to Live By</footer>
-        </div>
-
-        <div class="quote-card">
-            <blockquote>
-                "When it comes to making decisions based on limited evidence, few things are as important as having good priors."
-            </blockquote>
-            <footer>— Brian Christian and Tom Griffiths, Algorithms to Live By</footer>
-        </div>
-        
-        <div class="quote-card">
-            <blockquote>
-                "Zhuangzi said, 'The minnows swim about so freely, following the openings wherever they take them. Such is the happiness of fish.' Huizi said, 'You are not a fish, so whence do you know the happiness of fish?' Zhuangzi said, 'You are not I, so whence do you know I don’t know the happiness of fish?' Huizi said, 'I am not you, to be sure, so I don’t know what it is to be you. But by the same token, since you are certainly not a fish, my point about your inability to know the happiness of fish stands intact.' Zhuangzi said, 'Let’s go back to the starting point. You said, ‘Whence do you know the happiness of fish?’ Since your question was premised on your knowing that I know it, I must have known it from right here, up above the Hao River.'"
-            </blockquote>
-            <footer>— Zhuangzi, Happiness of Fish</footer>
-        </div>
-        
-        <div class="quote-card">
-            <pre>
-        "The moon has lost her memory.
-        A washed-out smallpox cracks her face,
-        Her hand twists a paper rose,
-        That smells of dust and old Cologne,
-        She is alone
-        With all the old nocturnal smells
-        That cross and cross across her brain.
-        The reminiscence comes"
-            </pre>
-            <footer>— Extract from "Rhapsody on a Windy Night" by T.S. Eliot; also referenced in the song "Memory" from Broadway musical "Cats"</footer>
-        </div>
-
-    </div>
-
     </section>
 
-<footer>
-    Made with ❤️ by Rodrigo - mind you, after spending a couple days scrolling through Jekyll templates and finally settling for the good old "you know what? I'll do it myself; it looks fun and, after all, how hard can it be?" . Find me on GitHub
-</footer>
+    <!-- Additional Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Other Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>LABind-ESM: Protein Binding Site Prediction</h3>
+                    <p>
+                        Most protein-ligand binding prediction methods treat the ligand as an afterthought—predicting sites from protein structure alone. LABind flips this with a ligand-aware approach that learns protein-ligand interactions simultaneously. We forked the original LABind architecture (Zhang et al., Nature Commun. 2025) and replaced the Ankh protein language model with Meta's ESM2-3B, upgrading from 1536-dim to 2560-dim per-residue embeddings. The hypothesis: ESM2's richer evolutionary patterns learned from larger-scale training might capture binding-relevant features that Ankh misses. Built collaboratively for CSC413 (Neural Networks) at UofT, this explores whether bigger protein language models actually translate to better binding site prediction—spoiler: sometimes yes, sometimes surprisingly no.
+                    </p>
+                    <a href="https://github.com/Rodri-rf/LABind_ESM" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Laplace's Cat: Quantum Computing Playground</h3>
+                    <p>
+                        "Less of a structured research project and more of a frenzied, poetic excavation of quantum computation"—this repository explores amplitude estimation, linear combinations of unitaries (LCU), query complexity, quantum signal processing, and Hamiltonian simulation through the lens of both mathematical rigor and philosophical wonder. It's the computational equivalent of a mathematician doodling elliptic curves in lecture margins: structured notebooks on quantum algorithms interwoven with reflections on the nature of computation itself. Includes custom rendering functions for Hamiltonians in both explicit tensor product form and simplified algebraic notation. Named after Laplace's demon meets Schrödinger's cat, because quantum mechanics is fundamentally about what we can and cannot know.
+                    </p>
+                    <a href="https://github.com/Rodri-rf/Quantum-Computing-Playground" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Beta Distributions & Quality Score Calibration</h3>
+                    <p>
+                        Sequencing platforms report quality scores (Phred scores) that are supposed to represent error probabilities: Q = -10 log₁₀(p). But how do you choose the parameters of a Beta(α, β) distribution such that the average error probability across n reads satisfies a target quality threshold with high confidence? This project tackles that question using concentration inequalities—Hoeffding's inequality for distribution-free bounds, Chebyshev's inequality when variance information is available, and practical quantile estimation for real-world constraints. It's the kind of statistical rigor that bioinformatics pipelines assume exists but rarely implement. Includes derivations, simulations, and reusable functions for modeling quality scores probabilistically rather than just trusting whatever the sequencer reports.
+                    </p>
+                    <a href="https://github.com/Rodri-rf/BioStats-for-fun-and-glory" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Data Structures & Algorithms for Fun</h3>
+                    <p>
+                        You know that feeling when you encounter a real-world problem that perfectly maps to some obscure theoretical CS concept, and instead of using an existing library, you spend the next week implementing it from scratch because "it'll be fun"? Yeah, that's this repo. Reinventing wheels, diving into textbooks, crafting my own implementations. Sometimes the journey is the point.
+                    </p>
+                    <a href="https://github.com/Rodri-rf/DSA-for-fun-and-glory" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>News Prophet (Hackathon)</h3>
+                    <p>
+                        Full-stack web app for predicting news article popularity. Extracts 58 features through web scraping, including sentiment analysis using NLP. Trained and compared decision trees, linear regression, and random forest models on 40,000 data points, achieving >70% validation accuracy. Built during a hackathon—because sometimes you need to see how far you can get in 24 hours.
+                    </p>
+                    <a href="https://github.com/Rodri-rf/NewsProphet" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container resume-container">
+            <h2 class="section-title">Resume</h2>
+            <p class="resume-description">
+                You can download my resume directly or view it in your browser:
+            </p>
+            <div class="resume-buttons">
+                <a href="Reyes_Feregrino_Rodrigo_Adolfo__Researchy_.pdf" download="Rodrigo_Reyes_Feregrino_Academic_Resume.pdf" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Resume (Academic)
+                </a>
+                <a href="Reyes_Feregrino_Rodrigo_Adolfo_CS_Big_Tech_2.pdf" download="Rodrigo_Reyes_Feregrino_Industry_Resume.pdf" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Resume (Industry)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Random Section -->
+    <section id="random" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Random Bits</h2>
+            <h3 class="subsection-title">Book Quotes I Think About Too Often</h3>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <blockquote>
+                        "The merit of all things lies in their difficulty."
+                    </blockquote>
+                    <footer>— Alexandre Dumas, <em>The Three Musketeers</em></footer>
+                </div>
+                
+                <div class="quote-card">
+                    <blockquote>
+                        "Communication is one of those delightful things that only work in practice; in theory it's impossible."
+                    </blockquote>
+                    <footer>— Brian Christian & Tom Griffiths, <em>Algorithms to Live By</em></footer>
+                </div>
+
+                <div class="quote-card">
+                    <blockquote>
+                        "The metaphysicians of Tlön are not looking for truth or even an approximation to it: they are after a kind of amazement. They consider metaphysics a branch of fantastic literature"
+                    </blockquote>
+                    But it hits different in Spanish:
+                    <blockquote>
+                        "Los metafísicos de Tlön no buscan la verdad ni siquiera la verosimilitud: buscan el asombro. Juzgan que la metafísica es una rama de la literatura fantástica. Saben que un sistema no es otra cosa que la subordinación de todos los aspectos del universo a uno cualquiera de ellos."
+                    </blockquote>
+                    <footer>— Jorge Luis Borges, <em>Tlön, Uqbar, Orbis Tertius</em></footer>
+                </div>
+                
+                <div class="quote-card">
+                    <blockquote>
+                        "When it comes to making decisions based on limited evidence, few things are as important as having good priors."
+                    </blockquote>
+                    <footer>— Brian Christian & Tom Griffiths, <em>Algorithms to Live By</em></footer>
+                </div>
+                
+                <div class="quote-card">
+                    <blockquote>
+                        Zhuangzi said, 'The minnows swim about so freely, following the openings wherever they take them. Such is the happiness of fish.' Huizi said, 'You are not a fish, so whence do you know the happiness of fish?' Zhuangzi said, 'You are not I, so whence do you know I don't know the happiness of fish?'
+                    </blockquote>
+                    <footer>— Zhuangzi, <em>Happiness of Fish</em></footer>
+                </div>
+                
+                <div class="quote-card">
+                    <blockquote>
+                        <pre>The moon has lost her memory.
+A washed-out smallpox cracks her face,
+Her hand twists a paper rose,
+That smells of dust and old Cologne,
+She is alone
+With all the old nocturnal smells
+That cross and cross across her brain.
+The reminiscence comes</pre>
+                    </blockquote>
+                    <footer>— T.S. Eliot, <em>Rhapsody on a Windy Night</em> (also referenced in "Memory" from <em>Cats</em>)</footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>
+            Made with caffeine and curiosity by Rodrigo. After spending way too long scrolling through Jekyll templates, I finally settled for the classic "you know what? I'll do it myself—how hard can it be?" 
+        </p>
+        <p>
+            <a href="https://github.com/Rodri-rf" target="_blank">Find me on GitHub</a>
+        </p>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
