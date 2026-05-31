@@ -40,13 +40,14 @@
                     Student. Computer Scientist. Chemist. Researcher. Builder of things at the intersection of quantum mechanics, generative AI, and synthetic biology.
                 </p>
                 <p class="hero-footnote">
-                    Also: caffeine enthusiast, constructive empiricist, occasional salsa dancer, and believer that the best ideas happen when disciplines collide.
+                    Also: caffeine enthusiast, constructive empiricist, salsa dancer, and believer that the best ideas happen when disciplines collide.
                 </p>
-            </div>
-            <nav class="hero-nav">
+             </div>
+             <nav class="hero-nav">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#research" class="nav-link">Research</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#essays" class="nav-link">Essays</a>
                 <a href="#resume" class="nav-link">Resume</a>
                 <a href="#random" class="nav-link">Random</a>
             </nav>
@@ -59,16 +60,19 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p>
-                    I'm a Computer Science and Chemistry student at the University of Toronto, currently navigating the messy, fascinating intersection of quantum computing, machine learning, and synthetic biology. I just finished a summer internship as a bioinformatics software developer at <strong>Roche's R&D division</strong>, where I built computational infrastructure for their novel SBX nanopore sequencing platform. Before that, I completed my PEY co-op at <strong>Sanofi</strong>, developing high-throughput genomics pipelines and designing heuristics to distinguish real viral mutations from sequencing noise.
+                    I'm a Computer Science and Chemistry student at the University of Toronto, currently navigating the messy, fascinating intersection of quantum computing, machine learning, and synthetic biology. I finished a summer internship as a bioinformatics software developer at <strong>Roche's R&D division</strong>, where I built computational infrastructure for their novel SBX nanopore sequencing platform. Before that, I completed my PEY co-op at <strong>Sanofi</strong>, developing high-throughput genomics pipelines and designing heuristics to distinguish real viral mutations from sequencing noise.
                 </p>
                 <p>
-                    Right now, I'm doing research with two groups. With <strong>Professor Nathan Wiebe</strong>, I work on theoretical quantum computing—specifically randomized quantum algorithms, combining qDRIFT time evolution with quantum phase estimation and zero-noise extrapolation to push what near-term quantum computers can do. With <strong>Professor Artur Izmaylov</strong>, I co-developed a sampling-based quantum diagonalization method using Q-SENSE  <em>ansätze</em>, creating the first practical pipeline that leverages seniority-structured states for NISQ-era electronic structure calculations.
+                    These days my research home is the <strong>Chemical Physics Theory Group</strong> at UofT, where I'm a research assistant in <strong>Professor Artur Izmaylov</strong>'s lab. I work on sampling-based quantum diagonalization (SQD) built on Q-SENSE <em>ansätze</em>—the short version is that we exploit the structure of how electrons pair up to decide which slices of an astronomically large space actually matter for chemistry, which keeps the classical bookkeeping from exploding. It's the kind of problem where the theory and the numerics have to agree before you're allowed to believe either of them. (I also spent a couple of years on randomized quantum-simulation algorithms—qDRIFT, phase estimation, zero-noise extrapolation—but that line of work is on hold for now.)
                 </p>
                 <p>
-                    I'm also a Teaching Assistant for theoretical computer science and calculus courses. Few things are as satisfying as watching students crack dynamic programming or finally understand why P vs NP actually matters.
+                    I'm also a Teaching Assistant for theoretical computer science and calculus courses. I love teaching. Few things are as satisfying as watching students crack dynamic programming or finally understand why P vs NP actually matters.
                 </p>
                 <p>
-                    But honestly? What gets me most excited is <strong>synthetic biology and AI</strong>. For the past three years, I've co-led the computational division of <strong>iGEM Toronto</strong>—the university's synthetic biology research team. We've won 4 Gold Medals and 2 Best Model Awards across four international competitions, building everything from phage engineering platforms to generative models for plasmid DNA. There's something uniquely satisfying about watching sequences you designed <em>in silico</em> actually work in a real biological systems.
+                    But honestly? What gets me most excited is <strong>synthetic biology and AI</strong>. For the past three years, I've co-led the computational division of <strong>iGEM Toronto</strong>—the university's synthetic biology research team. We've won 4 Gold Medals and 2 Best Model Awards across four international competitions, building everything from phage engineering platforms to generative models for plasmid DNA.
+                </p>
+                <p>
+                    I also write — there's a <a href="#essays">collection of essays below</a>.
                 </p>
             </div>
         </div>
@@ -86,10 +90,10 @@
                     <span class="research-period">May 2024 - Present</span>
                 </div>
                 <p class="research-description">
-                    As an avid "spooky action at a distance" enjoyer, I'm fortunate to be doing research with two quantum chemistry groups at UofT. With <strong>Professor Nathan Wiebe</strong>, I investigate quantum simulation algorithms for electronic structure Hamiltonians—specifically product formulas (Trotter-Suzuki, qDRIFT) and block-encoding methods (LCU, Qubitization). I developed a comprehensive framework combining qDRIFT time evolution with quantum phase estimation, implementing both QFT-based and Kitaev's iterative algorithms, plus a zero-noise extrapolation protocol using Chebyshev node sampling that eliminates systematic O(t²) errors.
+                    My current quantum work is with <strong>Professor Artur Izmaylov</strong>'s Chemical Physics Theory Group, where I co-developed one of the first practical Sampling-based Quantum Diagonalization (SQD) pipelines built on Q-SENSE <em>ansätze</em>. The idea: seniority-structured states give you systematic control over which corners of Hilbert space actually carry chemical weight, so you spend your classical post-processing where it counts instead of everywhere at once. We designed numerical experiments tying that seniority control to sampling efficiency—and there's a particular satisfaction when the theory and the numbers finally shake hands. Manuscript in preparation.
                 </p>
                 <p class="research-description">
-                    With <strong>Professor Artur Izmaylov</strong>, I co-developed the first practical Sampling-based Quantum Diagonalization (SQD) pipeline using Q-SENSE <em>ansätze</em>. The key insight: seniority-structured states give you systematic control over which regions of Hilbert space actually matter for chemistry, dramatically reducing the classical post-processing workload. We designed numerical experiments connecting seniority control to sampling efficiency—it's beautiful when theory and numerics align. Manuscript in preparation.
+                    Before that, I spent a couple of years on randomized quantum-simulation algorithms for electronic-structure Hamiltonians: product formulas (Trotter-Suzuki, qDRIFT) and block-encoding methods (LCU, qubitization). I built a framework pairing qDRIFT time evolution with quantum phase estimation—both QFT-based and Kitaev's iterative variants—plus a zero-noise extrapolation protocol using Chebyshev node sampling that kills the systematic O(t²) error and pushes toward Heisenberg-limited precision. That project is on hold for now, but the code is still up.
                 </p>
                 <div class="research-links">
                     <a href="https://github.com/Rick0317/qDriftExtraPolation" target="_blank" class="project-link">
@@ -105,11 +109,13 @@
                     <span class="research-period">iGEM Toronto, March 2022 - Present</span>
                 </div>
                 <p class="research-description">
-                    I lead the computational division for UofT's synthetic biology research team, competing in the International Genetically Engineered Machine (iGEM) competition. <strong>Four competitions. Four Gold Medals. Two Best Model Awards.</strong> Plus awards for Best Therapeutics, Best Entrepreneurship, and nominations for Best Foundational Advance, Best Wiki, and Best Presentation.
-                </p>
-                <p class="research-description">
                     I like to think there is something fundamentally computational about biology; life is information...and Computer Science offers super rich frameworks to deal with information. Most of my projects on synthetic biology and bioinformatics—at least the ones not protected by confidentiality agreements—have either been crafted in conjunction with, or heavily inspired by, the iGEM Toronto synthetic biology research team.
                 </p>
+
+                <p class="research-description">
+                    I led and participated in the computational division for UofT's synthetic biology research team, competing in the International Genetically Engineered Machine (iGEM) competition. <strong>Four competitions. Four Gold Medals. Two Best Model Awards.</strong> Plus awards for Best Therapeutics, Best Entrepreneurship, and nominations for Best Foundational Advance, Best Wiki, and Best Presentation.
+                </p>
+                
                 
                 <div class="project-highlight">
                     <h4 class="project-highlight-title">2025 – PHORAGER: AI-Powered Phage Engineering</h4>
@@ -237,15 +243,6 @@
                     </a>
                 </div>
                 
-                <div class="project-card">
-                    <h3>News Prophet (Hackathon)</h3>
-                    <p>
-                        Full-stack web app for predicting news article popularity. Extracts 58 features through web scraping, including sentiment analysis using NLP. Trained and compared decision trees, linear regression, and random forest models on 40,000 data points, achieving >70% validation accuracy. Built during a hackathon—because sometimes you need to see how far you can get in 24 hours.
-                    </p>
-                    <a href="https://github.com/Rodri-rf/NewsProphet" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -258,12 +255,116 @@
                 You can download my resume directly or view it in your browser:
             </p>
             <div class="resume-buttons">
-                <a href="Reyes_Feregrino_Rodrigo_Adolfo__Researchy_.pdf" download="Rodrigo_Reyes_Feregrino_Academic_Resume.pdf" class="btn btn-primary">
+                <a href="Rodrigo_Reyes_Resume_Master_Resume_Researchy.pdf" download="Rodrigo_Reyes_Resume_Master_Resume_Researchy.pdf" class="btn btn-primary">
                     <i class="fas fa-download"></i> Download Resume (Academic)
                 </a>
                 <a href="Reyes_Feregrino_Rodrigo_Adolfo_CS_Big_Tech_2.pdf" download="Rodrigo_Reyes_Feregrino_Industry_Resume.pdf" class="btn btn-secondary">
                     <i class="fas fa-download"></i> Download Resume (Industry)
                 </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Essays & Writing Section -->
+    <section id="essays" class="section">
+        <div class="container">
+            <h2 class="section-title">Essays &amp; Writing</h2>
+            <p class="essays-intro">
+                Alongside research, I write essays about science &mdash; mostly about what is real, what is hype, and how to tell the two apart. The pieces below come from <em>The First Second of Infinity</em>, a collection on the biology of aging and the computational tools now orbiting it, developed over the past academic year with a professor as an independent studies course in writing and journalism.
+            </p>
+
+            <!-- Featured: the collection -->
+            <div class="essay-feature">
+                <span class="essay-tag">Essay Collection</span>
+                <h3 class="essay-feature-title">The First Second of Infinity</h3>
+                <p class="essay-feature-subtitle">A collection of essays on longevity science &mdash; and the noise around it.</p>
+                <p>
+                    Three parts. Part I treats the biology of aging on its own terms: what evolution selects for, the twelve hallmarks of aging, and how epigenetic clocks measure something we could not measure twenty years ago. Part II treats the marketplace built on that biology &mdash; the Sirtris saga, the venture capital, the supplements. Part III treats the two technologies whose promoters claim they are about to change everything: artificial intelligence and quantum computing. The throughline is skeptical: beneath most of the hype there is usually a real, slow scientific core worth watching.
+                </p>
+                <div class="essay-links">
+                    <a href="The_First_Second_of_Infinity.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> Read the Collection
+                    </a>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Selected Essays</h3>
+            <div class="essays-list">
+
+                <!--
+                  STATUS BADGE: swap the class + text as pieces get published.
+                  In collection : <span class="essay-status status-collection">In Collection</span>
+                  Forthcoming   : <span class="essay-status status-forthcoming">Forthcoming</span>
+                  Published     : <a href="LINK" target="_blank" class="essay-status status-published">The Varsity</a>
+                -->
+
+                <article class="essay-item">
+                    <div class="essay-item-header">
+                        <h4 class="essay-item-title">&ldquo;Lifespan&rdquo; Is Misleading</h4>
+                        <span class="essay-status status-collection">In Collection</span>
+                    </div>
+                    <p class="essay-item-desc">
+                        Science has not extended the maximum human lifespan; it has raised life expectancy, which is a different thing. Why the ceiling near 120 years exists, read through an evolutionary lens.
+                    </p>
+                    <div class="essay-meta">Part I &middot; Of Diamonds and Dust</div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-item-header">
+                        <h4 class="essay-item-title">The Twelve Horsemen</h4>
+                        <span class="essay-status status-collection">In Collection</span>
+                    </div>
+                    <p class="essay-item-desc">
+                        The twelve hallmarks of aging as a diagnostic manual for mortality &mdash; twelve interacting failure modes, and why no single intervention closes more than one or two of them.
+                    </p>
+                    <div class="essay-meta">Part I &middot; Of Diamonds and Dust</div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-item-header">
+                        <h4 class="essay-item-title">Tic Toc Goes&hellip; Which Clock?</h4>
+                        <span class="essay-status status-collection">In Collection</span>
+                    </div>
+                    <p class="essay-item-desc">
+                        Epigenetic clocks turn invisible biochemistry into a single number for biological age &mdash; and the machine learning, from elastic-net regression to deep learning, that makes them tick.
+                    </p>
+                    <div class="essay-meta">Part I &middot; Of Diamonds and Dust</div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-item-header">
+                        <h4 class="essay-item-title">The Fluor de Lys Affair</h4>
+                        <span class="essay-status status-collection">In Collection</span>
+                    </div>
+                    <p class="essay-item-desc">
+                        A five-act story of resveratrol, Sirtris, and a $720 million mistake &mdash; how a flawed assay turned a measurement artifact into a pharmaceutical acquisition.
+                    </p>
+                    <div class="essay-meta">Part II &middot; Of Bird Beaks and Bargains</div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-item-header">
+                        <h4 class="essay-item-title">The Second Foundation</h4>
+                        <span class="essay-status status-collection">In Collection</span>
+                    </div>
+                    <p class="essay-item-desc">
+                        Cellular reprogramming and the Yamanaka factors &mdash; the science behind the first human trial of partial epigenetic reprogramming, and the scandals running alongside it.
+                    </p>
+                    <div class="essay-meta">Part II &middot; Of Bird Beaks and Bargains</div>
+                </article>
+
+                <article class="essay-item">
+                    <div class="essay-item-header">
+                        <h4 class="essay-item-title">All Theories Are Wrong, but Quantum Improvement Is Real</h4>
+                        <span class="essay-status status-collection">In Collection</span>
+                    </div>
+                    <p class="essay-item-desc">
+                        What a quantum computer actually is, computationally &mdash; and a careful separation of what is real, what is noise, and what is probably wrong in the field.
+                    </p>
+                    <div class="essay-meta">Part III &middot; Every Hundred Years</div>
+                </article>
+
             </div>
         </div>
     </section>
@@ -300,13 +401,6 @@
                         "Los metafísicos de Tlön no buscan la verdad ni siquiera la verosimilitud: buscan el asombro. Juzgan que la metafísica es una rama de la literatura fantástica. Saben que un sistema no es otra cosa que la subordinación de todos los aspectos del universo a uno cualquiera de ellos."
                     </blockquote>
                     <footer>— Jorge Luis Borges, <em>Tlön, Uqbar, Orbis Tertius</em></footer>
-                </div>
-
-                <div class="quote-card">
-                    <blockquote>
-                        "When it comes to making decisions based on limited evidence, few things are as important as having good priors."
-                    </blockquote>
-                    <footer>— Brian Christian & Tom Griffiths, <em>Algorithms to Live By</em></footer>
                 </div>
                 
                 <div class="quote-card">
